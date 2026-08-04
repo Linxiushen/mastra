@@ -1561,9 +1561,15 @@ type Shared_Type_74 = {
   parentSpanId?: (string | null) | undefined;
   endedAt?: (Date | null) | undefined;
   error?: (unknown | null) | undefined;
+  status?: (('success' | 'error' | 'running') | null) | undefined;
   entityType?: (Shared_Type_70 | null) | undefined;
   entityId?: (string | null) | undefined;
   entityName?: (string | null) | undefined;
+  metadata?:
+    | ({
+        [key: string]: unknown;
+      } | null)
+    | undefined;
   inputPreview?: (string | null) | undefined;
   /** Database record creation time */
   createdAt: Date;
