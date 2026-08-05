@@ -172,11 +172,17 @@
     "@mastra/platform-workspace": "1.0.0",
     "@mastra/railway": "0.4.0",
     "@mastra/s3": "0.6.0",
-    "@mastra/vercel": "1.3.0"
+    "@mastra/vercel": "1.3.0",
+    "@mastra/deepeval": "0.0.0"
   },
   "changesets": [
     "all-ducks-post",
     "automated-provider-registry-20260805-004759",
-    "green-birds-knock"
+    "chubby-spoons-kiss",
+    "fine-pets-cross",
+    "green-birds-knock",
+    "large-geckos-teach",
+    "lucky-otters-gather",
+    "ten-pans-buy"
   ]
 }

@@ -1,5 +1,16 @@
 # @mastra/otel-exporter
 
+## 1.3.8-alpha.0
+
+### Patch Changes
+
+- Updated the bundled OpenTelemetry dependencies so `@opentelemetry/core` resolves to a patched version (2.8.0 or later), removing exposure to the unbounded W3C baggage allocation issue where inbound `baggage` headers were parsed without size limits. ([#20729](https://github.com/mastra-ai/mastra/pull/20729))
+
+  Stable OpenTelemetry SDK packages moved from `^2.7.1` to `^2.8.0` and the OTLP exporter/logs packages moved from `^0.218.0` to `^0.219.0`. No code changes are required.
+
+- Updated dependencies [[`1f7bbd7`](https://github.com/mastra-ai/mastra/commit/1f7bbd7785a8d230aad02454ecabeb4a0b2cc96f)]:
+  - @mastra/core@1.56.1-alpha.1
+
 ## 1.3.7
 
 ### Patch Changes

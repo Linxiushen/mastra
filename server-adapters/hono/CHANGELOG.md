@@ -1,5 +1,25 @@
 # @mastra/hono
 
+## 1.5.14-alpha.1
+
+### Patch Changes
+
+- Added a clear server warning when a webhook is sent to an agent without a matching channel adapter. No adapter setup is needed for the warning: ([#20489](https://github.com/mastra-ai/mastra/pull/20489))
+
+  ```sh
+  curl -X POST http://localhost:4111/api/agents/support/channels/slack/webhook
+  ```
+
+  The server keeps the 404 response and logs:
+
+  ```text
+  Received a Slack webhook, but this agent doesn't have a Slack adapter. Add one to the agent's channels.adapters configuration and restart the server.
+  ```
+
+- Updated dependencies [[`1f7bbd7`](https://github.com/mastra-ai/mastra/commit/1f7bbd7785a8d230aad02454ecabeb4a0b2cc96f), [`91cfc19`](https://github.com/mastra-ai/mastra/commit/91cfc196b33816724c25c4fff489916d6fcb310f)]:
+  - @mastra/core@1.56.1-alpha.1
+  - @mastra/server@1.56.1-alpha.1
+
 ## 1.5.14-alpha.0
 
 ### Patch Changes
